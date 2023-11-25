@@ -1,5 +1,4 @@
 #pip install flet pandas
-
 import flet as ft
 from flet import Page, Text, Dropdown, ElevatedButton, dropdown, Container
 import pandas as pd
@@ -39,7 +38,12 @@ def main(page: Page):
     )
 
 
+
     def pick_region_submit_button_clicked(e):
+        def show_menu(e):
+            page.remove(title_pick_region, rashodu_pred_text, chart,back_submit_button)
+            page.add(title_text, pick_region_text,pick_region_dropdown, pick_region_submit_button)
+            page.update()
         page.remove(title_text, pick_region_text,pick_region_dropdown, pick_region_submit_button)
 
         if f"{pick_region_dropdown.value}" == "134.1000.01 ДГУ. Оплата за электроэнергию по тарифам Океанский пр-т, 34":
@@ -129,7 +133,9 @@ def main(page: Page):
             expand=True,
         )
 
-        page.add(title_pick_region, rashodu_pred_text, chart)
+        back_submit_button = ElevatedButton(text="Назад",on_click=show_menu)
+
+        page.add(title_pick_region, rashodu_pred_text, chart,back_submit_button)
 
 
         page.update
