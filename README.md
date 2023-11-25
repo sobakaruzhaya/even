@@ -14,5 +14,5 @@ pip install flet pandas glob keras scikit-learn tensorflow
 Интерфейс является демострационным. 
 Интерфейс загружает уже предсказанные значения затрат на период февраль - апрель 2022 года
 
-![Меню]('ui/demo_img/menu.jpg')
-![Чарт]('ui/demo_img/chart.jpg')
+![Меню](ui/demo_img/menu.jpg)
+![Чарт](ui/demo_img/chart.jpg)
