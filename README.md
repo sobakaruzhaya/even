@@ -14,5 +14,11 @@ pip install flet pandas glob keras scikit-learn tensorflow
 Интерфейс является демострационным. 
 Интерфейс загружает уже предсказанные значения затрат на период февраль - апрель 2022 года
 
+ ## Запуск UI
+ 1. Перйдите в директорию ui/
+ 2. убедитесь, что библиотеки flet и pandas установлены
+ 3. запустите design.py
+Так же ui представлен в виде приложения , скачать можете [тут](https://files.sberdisk.ru/s/fNhr3IKLlYUAhah)
+
 ![Меню](ui/demo_img/menu.jpg)
 ![Чарт](ui/demo_img/chart.jpg)
