@@ -5,7 +5,7 @@
 
 1. Установите следующие библиотеки, которые нужны для запуска кода:
 ```
-pip install flet pandas glob keras scikit-learn tensorflow
+pip install flet pandas keras scikit-learn tensorflow
 ```
 2. Запустие файл main.ipynb
 
